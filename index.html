@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+
+<head>
+   <meta charset="utf-8">
+   <title>Zakat Calculator</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="script.js"></script>
+</head>
+
+<body>
+   <nav class="navbar">
+      <div class="logo">ZAKAT CALCULATOR</div>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact</a></li>
+        </div>
+      </ul>
+    </nav>
+
+   <main>
+
+      <form method="GET"  class="form">
+
+         <h4>Zakat Calculator PKR</h4>
+
+         <div class="input-wrapper">
+            <input type="text" class="input-items" id="gold-value" placeholder="Enter Gold amount in gram " autofocus required>
+         </div>
+         <div class="input-wrapper">
+            <input type="text" class="input-items" id="silver-value" placeholder="Enter Silver amount in gram">
+         </div>
+         <div class="input-wrapper">
+            <input type="text" class="input-items" id="cash" placeholder="Enter Cash on hand">
+         </div class="input-wrapper">
+         <div class="input-wrapper">
+            <input type="text" class="input-items" id="bank-cash" placeholder="Enter Bank Amount">
+         </div class="input-wrapper">
+         <div class="input-wrapper">
+            <input type="text" class="input-items" id="real-estate" placeholder="Real Estate Assests">
+         </div>
+         <div class="input-wrapper">
+            <input type="text" class="input-items" id="liabilities" placeholder="Enter Liabilities">
+         </div>
+         <div>
+            <input type="button" class="calc-btn" value="Calculate" id="result" onclick="calculate()">
+         </div>
+         <div class="input-wrapper">
+            <input type="text" id="displayresult" readonly="readonly">
+         </div>
+
+      </form>
+
+   </main>
+
+</body>
+
+</html>
