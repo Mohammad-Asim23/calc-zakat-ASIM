@@ -9,7 +9,15 @@ function getValue(id) {
 }
 
 function calculate() {
-    var amt_nisaab = 88927;
+    var amt_nisaab;
+    var base_nisab = document.getElementById("baseNisab").value
+    if(base_nisab == "Gold"){
+        amt_nisaab = 1071630;
+    }
+    else{
+        amt_nisaab = 81533.79
+    }
+    
     var amt_gold = getValue("gold-value");
     var amt_silver = getValue("silver-value");
     var amt_home = getValue("cash");
