@@ -204,4 +204,17 @@ h4 {
 select{
   background: white;
 }
-
+.amt_values{
+  margin-left: 30px;
+}
+.amt_values input{
+    width: 100px;
+    outline: none;
+    padding: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset -5px -5px 12px #ffffff,
+    inset 5px 5px 12px rgba(0, 0, 0, .16);
+}

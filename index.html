@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" >
+<html lang="en">
 
 <head>
    <meta charset="utf-8">
@@ -15,31 +15,38 @@
    <nav class="navbar">
       <div class="logo">ZAKAT CALCULATOR</div>
       <ul class="nav-links">
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <div class="menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Contact</a></li>
-        </div>
+         <input type="checkbox" id="checkbox_toggle" />
+         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+         <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+         </div>
       </ul>
-    </nav>
+   </nav>
 
    <main>
 
-      <form method="GET"  class="form">
+      <form method="GET" class="form">
 
          <h4>Zakat Calculator PKR</h4>
          <div class="nisabOption">
             <label>Select base Nisab Value:</label><br>
-            <select  id="baseNisab">
+            <select id="baseNisab">
                <option value="Gold">Gold</option>
                <option value="Silver">Silver</option>
             </select>
          </div>
+         <div class="amt_values">
+            <label >Gold per Gram pkr: </label>
+            <input type="text" value="Rs 12300" readonly/><br>
+            <label>Silver per Gram pkr: </label>
+            <input type="text" value="Rs 133.48" readonly>
+         </div>
 
          <div class="input-wrapper">
-            <input type="text" class="input-items" id="gold-value" placeholder="Enter Gold amount in gram " autofocus required>
+            <input type="text" class="input-items" id="gold-value" placeholder="Enter Gold amount in gram " autofocus
+               required>
          </div>
          <div class="input-wrapper">
             <input type="text" class="input-items" id="silver-value" placeholder="Enter Silver amount in gram">
